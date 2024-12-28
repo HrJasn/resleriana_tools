@@ -24,13 +24,13 @@ Unsafe zero-copy type conversion is used to improve performance
 ### First time execute will jump error：
 FetchCatalog data: <?xml version="1.0" encoding="UTF-8"?>
 <Error><Code>AccessDenied</Code>...</Error>
-2024/12/27 20:53:43 Unmarshal error: invalid character '<' looking for beginning of value
-2024/12/27 20:53:43 Failed to fetch catalog: invalid character '<' looking for beginning of value
+...... Unmarshal error: invalid character '<' looking for beginning of value
+...... Failed to fetch catalog: invalid character '<' looking for beginning of value
 
-#### Bacause resleriana_tools_config.json file will content:
+Bacause resleriana_tools_config.json file will content:
 {
   "fetch_url": "https://asset.resleriana.com/asset/AssetsVersion/Android/"
 }
 
-#### You need replace AssetsVersion to found version string by yourself.
+You need replace AssetsVersion to found version string by yourself.
 Then execute again without compile.
